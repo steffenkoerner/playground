@@ -1,8 +1,5 @@
 cc_library(
     name = "bisect",
-    srcs = [
-        "bisect.cpp",
-    ],
     hdrs = ["bisect.h"],
 )
 
