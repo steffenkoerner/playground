@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "bisect.h"
+#include "application.h"
 
 TEST(sum, AdditionPositiveValues) {
   const int result = sum(3,4);
@@ -11,6 +11,8 @@ TEST(sum, AdditionNegativeValues) {
   EXPECT_EQ(result, -9);
 }
 
+// You found out that there is a problem with the application and thus you added this
+// Test that shows the bug.
 TEST(sum, BugFinding) {
   const int result = sum(5,-6);
   EXPECT_EQ(result, -1);
